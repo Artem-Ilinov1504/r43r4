@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University</title>
+</head>
+<body>
+<h2>Add Order</h2>
+<form action="/add_order" method="post">
+    <label for="name_of_owner">Owner name:</label>
+    <input type="text" id="name_of_owner" name="name"><br>
+    <input type="submit" value="Add order">
+</form>
+
+<h2>Add Product</h2>
+<form action="/add_product" method="post">
+    <label for="name">Product name:</label>
+    <input type="text" id="name" name="name"><br>
+    <input type="submit" value="Add product">
+</form>
+
+<h2>Pair order and product</h2>
+<form action="/pair_order_product" method="post">
+    <label for="o_id">Order ID:</label>
+    <input type="text" id="o_id" name="order_id"><br>
+    <label for="p_id">Product ID:</label>
+    <input type="text" id="p_id" name="product_id"><br>
+    <input type="submit" value="Pair!">
+</form>
+</body>
+</html>
